@@ -14,12 +14,12 @@ if (!window.MusicMan) {
       });
 
       setTimeout(function() {
-        setTimeout(function() {
-          $('body').html('<img style="height: 100%; width: 100%;" src="http://www.acountrybreezervpark.com/pet%20image.gif">');
-        }, 2500);
         $('div').fadeOut(duration);
         setTimeout(function () {
-          window.location.href = 'http://www.acountrybreezervpark.com/';
+          setTimeout(function() {
+            window.location.href = 'http://www.acountrybreezervpark.com/';
+          }, 1000);
+          $('body').html('<img style="height: 100%; width: 100%;" src="http://www.acountrybreezervpark.com/pet%20image.gif">');
         }, duration/2);
       }, duration);
     }, duration/2);
