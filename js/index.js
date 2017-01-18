@@ -8,6 +8,7 @@ $(window).on("load", function() {
     $('img').each(function() {
       var $this = $(this);
       setTimeout(function() {
+        if ($this.attr('src') === 'http://reddeervillarvranch.com/animation_clear.gif' || 'http://www.acountrybreezervpark.com/pet%20image.gif') return;
         $this.attr('src', Math.random() > .5 ? 'http://reddeervillarvranch.com/animation_clear.gif' : 'http://www.acountrybreezervpark.com/pet%20image.gif');
       }, getRandomArbitrary(0, duration));
     });
