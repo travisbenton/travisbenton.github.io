@@ -2,7 +2,7 @@ var duration = 5000;
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
-$(document).ready(function() {
+$(window).on("load", function() {
   $('img').each(function() {
     var $this = $(this);
     setTimeout(function() {
