@@ -14,7 +14,9 @@ if (!window.MusicMan) {
       });
 
       setTimeout(function() {
-        $('body').html('<img style="height: 100%; width: 100%;" src="http://www.acountrybreezervpark.com/pet%20image.gif">');
+        setTimeout(function() {
+          $('body').html('<img style="height: 100%; width: 100%;" src="http://www.acountrybreezervpark.com/pet%20image.gif">');
+        }, 1000);
         $('div').fadeOut(duration);
         setTimeout(function () {
           window.location.href = 'http://www.acountrybreezervpark.com/';
